@@ -4,7 +4,10 @@
   "description": "A recipe application with token based authentication, RESTful routing, CRUD actions, querying, and more.",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha **/*.test.js",
+    "test-watch": "nodemon --exec npm run \"test\"",
+    "start": "node server.js",
+    "bundle": "webpack --watch"
   },
   "author": "3mpirical",
   "license": "ISC",
